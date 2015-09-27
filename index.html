@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>IT411 - Jennifer Kania - A1 - Averages</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://use.edgefonts.net/source-sans-pro:n4,i4,n6,i6:all.js"></script>
+         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <body>
+
+        <h1>IT411 - Jennifer Kania - A3 - using jQuery Effects</h1>
+        <h2>This is my solution!</h2>
+         <hr />
+        
+        <script>
+         $(document).ready(function() {
+
+     
+      $("div#textbox1").mouseenter(function() {
+         $(this).css("color", "#d49a9a");
+      });
+             
+      $("div#textbox1").mouseleave(function() {
+         $(this).css("color", "#222");
+      });
+
+              
+    $( "#hider" ).click(function() {
+      $( "span:last-child" ).hide( "fast", function() {
+        $( this ).prev().hide( "fast", arguments.callee );
+      });
+    });
+    $( "#shower" ).click(function() {
+      $( "span" ).show( 2000 );
+    });   
+
+    });
+        </script>
+ 
+        <div class="textbox_holder">
+            <div id="textbox1">Front Street Cantina in Plainfield, IL serves fantastic authentic mexican 
+            cuisine that keeps my family coming back for more.  Their chips and sala are always fresh and the
+            portions are a good size but not huge.  The staff is friendly and attentive and we are always seated right away, have never had to wait. The best dish I have had there is the chicken enchilada.  They have great kid's meals and are very good about drink refills.  Their lunch specials make for an economical way to have a nice lunch out.  </div>
+            <div id="right_side">
+            <div id="textbox2"><span>Nevin's Brewing Company in Plainfield, IL</span><span> serves a wide seletion of craft beers made by them and other local breweries. </span><span> You can even take home some of the wonderful beer in a Growler! </span><span> In addition, their menu is full of delicious lunch and dinner choices at very reasonable prices.</span><span>  My favorite is the spinach salad, which includes pears, walnuts, cranberries and blue cheese.  Also their beer and cheddar soup is out of this world!</span><span> They have weekly trivia nights and weekend bands with plenty of room to spread out.</span>
+            </div>
+             <button id="shower">Show</button>
+            <button id="hider">Hide</button>
+                </div>
+               
+        </div>
+  <div class="footer">
+    <p>Created by Jennifer Kania</p>
+  </div>
+
+    </body>
+</html>
